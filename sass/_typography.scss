@@ -1,0 +1,58 @@
+.heading-1 {
+    color: $color-primary;
+    font-size: 4.5rem;
+    line-height: 1;
+    margin-bottom: 0;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-xsmall) {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+
+.heading-2--dark {
+    font-size: 1.3rem;
+    color: $color-primary;
+}
+
+.heading-2--light {
+    font-size: 1.3rem;
+    color: $color-grey-light;
+}
+
+.heading-3 {
+    font-size: 1.3rem;
+    color: $color-primary-pink;
+}
+
+.main__text {
+    margin-top: -6rem;
+    line-height: 1.5;
+
+    @media only screen and (max-width: $bp-medium) {
+        margin-top: 0;
+    }
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    font-size: 1.1rem;
+
+    & a {
+        color: hsl(228, 45%, 44%);
+    }
+}

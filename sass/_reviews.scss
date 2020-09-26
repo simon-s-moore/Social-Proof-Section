@@ -1,0 +1,87 @@
+.user-reviews {
+    padding-top: 3.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    grid-column-gap: 3rem;
+    grid-column: 1 / 3;
+
+    justify-content: center;
+
+    
+    @media only screen and (max-width: $bp-large) {
+        justify-content: start;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        padding-top: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-columns: none;
+    }
+}
+
+.review__card {
+    width: 100%;
+    height: min-content;
+    background-color: $color-primary;
+    border-radius: 1rem;
+    margin-bottom: 0;
+
+    
+    @media only screen and (max-width: $bp-small) {
+        margin-bottom: 3rem;
+    }
+    
+
+    &:nth-of-type(2) {
+        display: grid;
+        align-self: center;
+
+        @media only screen and (max-width: $bp-large) {
+            align-self: start;
+        }
+    }
+
+    &:nth-of-type(3) {
+        display: grid;
+        align-self: end;
+
+        @media only screen and (max-width: $bp-large) {
+            align-self: start;
+        }
+    }
+}
+
+.review__user {
+    display: grid;
+    justify-content: start;
+    grid-template-rows: 4rem min-content;
+    grid-template-columns: 4rem 1fr;
+    grid-row-gap: 3rem;
+    grid-column-gap: 2.3rem;
+    padding: 4rem 3rem;
+}
+
+.review__img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.review__user-box {
+    display: grid;
+    align-items: center;
+}
+
+.review__user-title {
+    font-size: 1.3rem;
+} 
+
+.review__text {
+    color: $color-grey-light;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    grid-column: 1 / span 2;
+}
